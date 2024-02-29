@@ -20,9 +20,18 @@
                     <i class="fas fa-redo"></i> Làm mới
                 </button>
 
-                <button class="btn btn-sm btn-success" @click="goToAddContact">
+                <!-- <button class="btn btn-sm btn-success" @click="goToAddContact">
                     <i class="fas fa-plus"></i> Thêm mới
-                </button>
+                </button> -->
+                <router-link
+                    :to="{
+                        name: 'contact.add',
+                    }"
+                    >
+                    <span class="btn btn-sm btn-success">
+                        <i class="fas fa-plus"></i> Thêm mới</span
+                    >
+                </router-link>
 
                 <button
                     class="btn btn-sm btn-danger"
